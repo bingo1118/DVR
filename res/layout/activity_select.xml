@@ -1,0 +1,209 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="2sp"
+        android:background="@drawable/top">
+       
+	    <Button
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="返回"
+                android:gravity="center"
+                android:background="@drawable/top_btn"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:textSize="12sp"/>
+     	<TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5sp"
+                android:text="查询轨迹"
+                android:textColor="#fff"
+                android:layout_weight="10"
+                android:textSize="20sp" />
+      	<Button
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="查询"
+                android:background="@drawable/top_btn"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_weight="1"
+                android:textSize="12sp" />
+      
+         </LinearLayout>
+         
+    <LinearLayout 
+        android:layout_width="match_parent" 
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#CCCCCC">
+    <LinearLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="#fff"
+        android:orientation="vertical">
+
+          <LinearLayout
+                android:id="@+id/device_number"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/device_number_text_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:text="设备号"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/device_number_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="0000000001"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                layout="@layout/line" />
+          
+            <LinearLayout
+                android:id="@+id/start_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/start_time_text1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="起始时间"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/start_time_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="2016-3-14"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                <ImageView
+                    android:layout_width="8sp"
+                    android:layout_height="8sp"
+                    android:layout_marginLeft="3sp"
+                    android:background="@drawable/inverted_traingle"/>
+                    
+                
+                 <TextView
+                    android:id="@+id/start_time_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="08:08"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                    <ImageView
+                    android:layout_width="8sp"
+                    android:layout_height="8sp"
+                    android:layout_marginLeft="3sp"
+                    android:background="@drawable/inverted_traingle"/>
+              
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                layout="@layout/line" />
+            
+             <LinearLayout
+                android:id="@+id/stop_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:id="@+id/stop_time_text1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="终止时间"
+                    android:layout_weight="1"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/stop_time_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="2016-3-18"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                 <ImageView
+                    android:layout_width="8sp"
+                    android:layout_height="8sp"
+                    android:layout_marginLeft="3sp"
+                    android:background="@drawable/inverted_traingle"/>
+                
+                 <TextView
+                    android:id="@+id/stop_time_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:text="15:16"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+                  <ImageView
+                    android:layout_width="8sp"
+                    android:layout_height="8sp"
+                    android:layout_marginLeft="3sp"
+                    android:background="@drawable/inverted_traingle"/>
+
+              
+            </LinearLayout>
+
+            <include
+                android:layout_width="fill_parent"
+                android:layout_height="0.3dp"
+                layout="@layout/line" />
+      
+         </LinearLayout>
+     
+	</LinearLayout>
+    
+
+</LinearLayout>
